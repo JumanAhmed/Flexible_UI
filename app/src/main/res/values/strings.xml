@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Flexible UI</string>
+
+    <string-array name="chapter">
+        <item>Mode 1</item>
+        <item>Mode 2</item>
+        <item>Mode 3</item>
+        <item>Mode 4</item>
+
+    </string-array>
+
+    <string-array name="description">
+        <item>In this mode OUT is low. Once a count is loaded the counter is decremented after every cycle,
+and when count reaches zero, the OUT goes high. The OUT remains high until a new count  is loaded.
+</item>
+        <item>In this mode OUT is intially high. When gate is triggered, the OUT goes low, and at the end of
+count it goes high again, thus generating a one shot pulse.
+</item>
+        <item>The mode is used to generate a pulse equal to given clock period at a given interval.
+When a count is loaded, the OUT stays high until count reaches 1 and then OUT goes low
+for 1 clock period then gets reloaded automatically.
+</item>
+        <item>In this a continuous square wave with period equal to count is generated.
+The frequency of square wave = frequency of clock divide by count.
+if count (N) is odd pulse stay high for (N + 1)/2 and low for (N – 1)/2.</item>
+
+    </string-array>
+
+</resources>
